@@ -8,7 +8,7 @@ pipeline {
    stages {
       stage('hadoop-build') { 
         steps {
-           echo ' hi'    
+           sh './start-build-env.sh'    
         } 
       }
    }
