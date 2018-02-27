@@ -7,6 +7,9 @@ pipeline {
    
    stages {
       stage('hadoop-build') { 
+         environment {
+               docker 1.4.1
+                    } 
         steps {
            sh './start-build-env.sh'    
         } 
