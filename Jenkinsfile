@@ -1,7 +1,7 @@
 pipeline {
    agent {
     dockerfile {
-      additionalBuildArgs "--build-args ${./start-build-env.sh}"
+      additionalBuildArgs "--build-args ${start-build-env.sh}"
     }
   tools {
         maven 'maven 3.3.9' 
