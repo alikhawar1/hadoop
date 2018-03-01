@@ -1,5 +1,5 @@
 pipeline {
-   agent {
+   agent { any }
     dockerfile {
       additionalBuildArgs "--build-args ${start-build-env.sh}"
     }
@@ -15,5 +15,4 @@ pipeline {
         } 
       }
    }
-}
 }
